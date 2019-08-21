@@ -63,3 +63,6 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+
+GOOGLE_APP_CREDENTIALS.json
