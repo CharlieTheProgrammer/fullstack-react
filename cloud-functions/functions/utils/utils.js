@@ -6,7 +6,7 @@
 const extractDocsFromSnapshot = querySnapshot => {
 	let documents = [];
 	querySnapshot.forEach(doc => {
-		documents.push(doc.data());
+		documents.push({id: doc.id, ...doc.data()});
 	});
 	return documents;
 }
