@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "fullstack-react-df86f"
+    "prod": "fullstack-react-df86f",
+    "dev": "fullstack-react-test-70be7"
   }
 }

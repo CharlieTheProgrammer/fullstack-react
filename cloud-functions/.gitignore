@@ -65,4 +65,4 @@ node_modules/
 .env
 
 
-GOOGLE_APP_CREDENTIALS.json
+*CREDS*.json

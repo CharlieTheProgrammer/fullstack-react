@@ -8,7 +8,8 @@
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
     "local": "functions-framework --target=getPosts",
-    "firebase-test": "cross-env GOOGLE_APPLICATION_CREDENTIALS='../GOOGLE_APP_CREDENTIALS.json' firebase serve"
+    "firebase-serve-prod": "firebase use prod && cross-env GOOGLE_APPLICATION_CREDENTIALS='../GAPP_CREDS_PROD.json' firebase serve",
+    "firebase-serve-dev": "firebase use dev && cross-env GOOGLE_APPLICATION_CREDENTIALS='../GAPP_CREDS_DEV.json' firebase serve"
   },
   "engines": {
     "node": "10"
