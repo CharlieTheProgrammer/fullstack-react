@@ -12,16 +12,37 @@ router.get('/', async (req, res) => {
 	}
 });
 
-router.post('/', (req, res) => {
-
+router.post('/', async (req, res) => {
+	try {
+		const { body } = req
+		let postsData = await posts.add(body);
+		res.json(messages.response201(body))
+	} catch (error) {
+		console.log(error)
+		res.status(400).json(messages.response400(error.message))
+	}
 });
 
-router.patch('/', (req, res) => {
-
+router.patch('/', async (req, res) => {
+	try {
+		const { body } = req
+		let postsData = await posts.add(body);
+		res.json(messages.response201(body))
+	} catch (error) {
+		console.log(error)
+		res.status(400).json(messages.response400(error.message))
+	}
 });
 
-router.delete('/', (req, res) => {
-
+router.delete('/', async (req, res) => {
+	try {
+		const { id } = req.body
+		let postsData = await posts.delete(id);
+		res.json(messages.response200(req.body))
+	} catch (error) {
+		console.log(error)
+		res.status(400).json(messages.response400(error.message))
+	}
 });
 
 module.exports = router;
