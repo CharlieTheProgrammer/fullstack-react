@@ -35,7 +35,7 @@ class Login extends Component {
     return;
 
     axios
-      .post("/user", newUser)
+      .post("/login", newUser)
       .then(result => {
         console.log(result.data);
       })
