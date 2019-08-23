@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import AppIcon from "../assets/images/icon.svg";
+import { styles } from "../assets/styles/styles";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
@@ -9,26 +10,6 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
-
-const styles = {
-  form: {
-    textAlign: "center"
-  },
-  image: {
-    height: "80px",
-    width: "80px",
-    margin: "20px auto 20px auto"
-  },
-  button: {
-    margin: "1.75rem 0"
-  },
-  textField: {
-    margin: ".5rem 0"
-  },
-  progress: {
-    position: "fixed"
-  }
-};
 
 class Signup extends Component {
   constructor() {
